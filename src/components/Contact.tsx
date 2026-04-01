@@ -8,18 +8,18 @@ const Contact = () => {
       <div className="contact-cta-wrap">
         <div className="contact-cta">
           <div className="contact-cta-text">
-            <h2>Let's Connect and Create Something Amazing!</h2>
+            <h2>Let's build something extraordinary together!</h2>
             <p>
-              Reach out to me for collaborations, inquiries, or just to say
-              hello.
+              Whether you have a question or just want to say hi, my inbox is
+              always open.
             </p>
           </div>
           <a
-            href="mailto:shofiqul18650@gmail.com"
+            href="mailto:shafiqulislam25021998@gmail.com"
             className="contact-cta-btn"
             data-cursor="disable"
           >
-            Contact Me <MdArrowOutward />
+            Say Hello <MdArrowOutward />
           </a>
         </div>
       </div>
@@ -27,11 +27,12 @@ const Contact = () => {
       <footer className="contact-footer">
         <div className="contact-footer-inner">
           <p className="contact-footer-credit">
-            Developed by <span>Md Shofiqul Islam</span>
+            © 2025 · Designed & Built by <span>Md Shofiqul Islam</span>
           </p>
         </div>
       </footer>
     </div>
+
   );
 };
 

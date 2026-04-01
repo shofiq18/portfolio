@@ -10,57 +10,45 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 const projects = [
   {
     number: "01",
-    title: "E-Commerce Platform",
-    category: "Full Stack Web App",
+    title: "TestyRide",
+    category: "Full-Stack Web App (Team)",
     year: "2024",
-    tech: ["Next.js", "Node.js", "PostgreSQL", "Stripe", "Redis"],
+    tech: ["React", "Node.js", "Express", "MongoDB", "Firebase", "Tanstack Query", "JWT"],
     description:
-      "A high-performance e-commerce platform with real-time inventory, Stripe payments, Redis caching, and a powerful admin dashboard with analytics.",
+      "A comprehensive restaurant visualization and food delivery platform with city-wise grouping, role-based access, and an advanced admin/rider management workflow.",
     color: "#7c3aed",
-    liveUrl: "https://example.com",
-    repoUrl: "https://github.com/shofiqul",
-    imgBg: "linear-gradient(135deg, #1e0a3c 0%, #7c3aed 100%)",
+    liveUrl: "https://testy-ride.web.app",
+    repoUrl: "https://github.com/shofiq18",
+    imageUrl: "/images/project-3.png",
   },
   {
     number: "02",
-    title: "SaaS Dashboard",
-    category: "React / NestJS",
+    title: "Piece Work",
+    category: "Full-Stack Task Management",
     year: "2024",
-    tech: ["React", "NestJS", "MongoDB", "Docker", "GraphQL"],
+    tech: ["React", "Node.js", "Express", "MongoDB", "Firebase", "Stripe", "Tanstack Query"],
     description:
-      "Multi-tenant SaaS app with role-based access, real-time WebSockets, and a containerised microservice architecture deployed on Docker.",
+      "A robust freelance platform featuring user authentication, role-based dashboards, secure Stripe payment integration, and real-time task management systems.",
     color: "#0f766e",
-    liveUrl: "https://example.com",
-    repoUrl: "https://github.com/shofiqul",
-    imgBg: "linear-gradient(135deg, #03251f 0%, #0f766e 100%)",
+    liveUrl: "https://piece-work-b72e6.web.app",
+    repoUrl: "https://github.com/shofiq18",
+    imageUrl: "/images/project-2.png",
   },
   {
     number: "03",
-    title: "Social Media API",
-    category: "Backend Engineering",
-    year: "2023",
-    tech: ["Node.js", "Express", "MongoDB", "JWT", "Cloudinary"],
+    title: "FoodBridge",
+    category: "Full-Stack Food Sharing",
+    year: "2024",
+    tech: ["React", "Node.js", "Express", "MongoDB", "Firebase", "JWT", "Tailwind CSS"],
     description:
-      "RESTful API with full auth flow, media uploads via Cloudinary, follow/feed system, and advanced pagination built for millions of records.",
+      "A social impact platform for food sharing, featuring interactive food request systems, secure authentication, and a dynamic responsive dashboard.",
     color: "#b45309",
-    liveUrl: "https://example.com",
-    repoUrl: "https://github.com/shofiqul",
-    imgBg: "linear-gradient(135deg, #2d1500 0%, #b45309 100%)",
-  },
-  {
-    number: "04",
-    title: "Portfolio CMS",
-    category: "Headless CMS · Next.js",
-    year: "2023",
-    tech: ["Next.js", "Sanity.io", "Tailwind CSS", "Vercel", "TypeScript"],
-    description:
-      "Custom headless CMS-driven portfolio with dynamic content, ISR, full SEO optimisation, dark mode, and silky-smooth GSAP animations.",
-    color: "#be185d",
-    liveUrl: "https://example.com",
-    repoUrl: "https://github.com/shofiqul",
-    imgBg: "linear-gradient(135deg, #2d0020 0%, #be185d 100%)",
+    liveUrl: "https://food-bridge-7ed3c.web.app",
+    repoUrl: "https://github.com/shofiq18",
+    imageUrl: "/images/project-1.png",
   },
 ];
+
 
 const Work = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -70,7 +58,7 @@ const Work = () => {
     () => {
       const cards = cardsRef.current;
       const total = cards.length;
-      const SCROLL_PER_CARD = 700;
+      const SCROLL_PER_CARD = 400;
 
       const tl = gsap.timeline({
         scrollTrigger: {
@@ -91,7 +79,7 @@ const Work = () => {
           card,
           { yPercent: 105 },
           { yPercent: 0, ease: "none", duration: 1 },
-          i - 1
+          i - 1,
         );
         tl.to(cards[i - 1], { scale: 0.96, ease: "none", duration: 1 }, i - 1);
       });
@@ -100,7 +88,7 @@ const Work = () => {
         ScrollTrigger.getById("work-stack")?.kill();
       };
     },
-    { scope: sectionRef }
+    { scope: sectionRef },
   );
 
   return (
@@ -167,26 +155,24 @@ const Work = () => {
               {/* Right: Image / Visual */}
               <div
                 className="work-card-right"
-                style={{ background: project.imgBg }}
+                style={{
+                  background: project.imageUrl
+                    ? `url(${project.imageUrl}) center/cover no-repeat`
+                    : project.color,
+                }}
               >
                 <div className="work-card-visual">
                   <div className="work-visual-window">
-                    <div className="work-visual-bar">
-                      <span />
-                      <span />
-                      <span />
-                    </div>
                     <div
                       className="work-visual-screen"
-                      style={{ background: project.imgBg }}
+                      style={{
+                        background: project.imageUrl
+                          ? `url(${project.imageUrl}) center/cover no-repeat`
+                          : project.color,
+                      }}
                     >
-                      <div className="work-visual-tag">{project.category}</div>
-                      <div
-                        className="work-visual-title"
-                        style={{ color: project.color }}
-                      >
-                        {project.title}
-                      </div>
+                      {/* Placeholder for video or image */}
+
                     </div>
                   </div>
                 </div>

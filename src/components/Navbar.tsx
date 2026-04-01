@@ -71,7 +71,7 @@ const Navbar = () => {
           </li>
         </ul>
         <a
-          href="mailto:shofiqul18650@gmail.com"
+          href="mailto:shafiqulislam25021998@gmail.com"
           className="navbar-btn"
           data-cursor="disable"
         >
