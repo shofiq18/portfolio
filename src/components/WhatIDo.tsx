@@ -90,20 +90,19 @@ const WhatIDo = () => {
               <h3>FRONTEND</h3>
               <h4>UI/UX Engineering</h4>
               <p>
-                Building responsive, accessible, and visually stunning
-                interfaces with modern frameworks and cutting-edge tooling.
+                Specializing in creating dynamic, user-friendly web applications 
+                using modern React ecosystems and high-performance frontend tooling.
               </p>
               <h5>Skillset &amp; tools</h5>
               <div className="what-content-flex">
                 <div className="what-tags">React</div>
                 <div className="what-tags">Next.js</div>
-                <div className="what-tags">TypeScript</div>
-                <div className="what-tags">JavaScript</div>
-                <div className="what-tags">HTML5 / CSS3</div>
+                <div className="what-tags">Typescript</div>
                 <div className="what-tags">Tailwind CSS</div>
-                <div className="what-tags">Redux</div>
-                <div className="what-tags">GSAP</div>
-                <div className="what-tags">Figma</div>
+                <div className="what-tags">PostgreSQL</div>
+                <div className="what-tags">Node.js</div>
+                <div className="what-tags">Vercel</div>
+                <div className="what-tags">Git / GitHub</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -130,24 +129,23 @@ const WhatIDo = () => {
               <h3>BACKEND</h3>
               <h4>Server &amp; API Engineering</h4>
               <p>
-                Designing and building scalable REST &amp; GraphQL APIs,
-                microservices, databases, and cloud infrastructure that power
-                real-world applications.
+                Building scalable RESTful APIs and full-stack platforms with 
+                robust database management and secure authentication systems.
               </p>
               <h5>Skillset &amp; tools</h5>
               <div className="what-content-flex">
                 <div className="what-tags">Node.js</div>
                 <div className="what-tags">Express.js</div>
-                <div className="what-tags">NestJS</div>
                 <div className="what-tags">PostgreSQL</div>
                 <div className="what-tags">MongoDB</div>
-                <div className="what-tags">Redis</div>
-                <div className="what-tags">Docker</div>
+                <div className="what-tags">Mongoose</div>
+                <div className="what-tags">Firebase</div>
+                <div className="what-tags">Next.js</div>
                 <div className="what-tags">REST API</div>
-                <div className="what-tags">GraphQL</div>
               </div>
               <div className="what-arrow"></div>
             </div>
+
           </div>
         </div>
       </div>
